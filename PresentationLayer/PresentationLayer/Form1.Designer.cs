@@ -29,98 +29,189 @@ namespace PresentationLayer
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.rbTrosed = new System.Windows.Forms.RadioButton();
-            this.rbFotelja = new System.Windows.Forms.RadioButton();
-            this.rbBela = new System.Windows.Forms.RadioButton();
-            this.rbSiva = new System.Windows.Forms.RadioButton();
-            this.cbVal1 = new System.Windows.Forms.ComboBox();
-            this.cbVal2 = new System.Windows.Forms.ComboBox();
-            this.tbIznos1 = new System.Windows.Forms.TextBox();
-            this.tbIznos2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.btKonverzija = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.lbCena1 = new System.Windows.Forms.Label();
-            this.lbNaziv1 = new System.Windows.Forms.Label();
-            this.lbCena2 = new System.Windows.Forms.Label();
-            this.lbNaziv2 = new System.Windows.Forms.Label();
-            this.lbNaziv4 = new System.Windows.Forms.Label();
-            this.lbNaziv3 = new System.Windows.Forms.Label();
-            this.lbCena3 = new System.Windows.Forms.Label();
-            this.lbCena5 = new System.Windows.Forms.Label();
+            this.btRegistracija = new System.Windows.Forms.Button();
+            this.tbKonvert2 = new System.Windows.Forms.TextBox();
+            this.tbKonvert1 = new System.Windows.Forms.TextBox();
+            this.cmbVal2 = new System.Windows.Forms.ComboBox();
+            this.cmbVal1 = new System.Windows.Forms.ComboBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btFilter = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.rbBraon = new System.Windows.Forms.RadioButton();
+            this.rbBez = new System.Windows.Forms.RadioButton();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.rbUgaona = new System.Windows.Forms.RadioButton();
+            this.rbTrosed = new System.Windows.Forms.RadioButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.Detail4 = new System.Windows.Forms.Button();
+            this.Detail3 = new System.Windows.Forms.Button();
+            this.Detail2 = new System.Windows.Forms.Button();
+            this.Detail1 = new System.Windows.Forms.Button();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbCena4 = new System.Windows.Forms.Label();
+            this.lbCena5 = new System.Windows.Forms.Label();
+            this.lbCena3 = new System.Windows.Forms.Label();
+            this.lbNaziv3 = new System.Windows.Forms.Label();
+            this.lbNaziv4 = new System.Windows.Forms.Label();
+            this.lbNaziv2 = new System.Windows.Forms.Label();
+            this.lbCena2 = new System.Windows.Forms.Label();
+            this.lbNaziv1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.panel4.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.Controls.Add(this.btKonverzija);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.tbIznos2);
-            this.panel1.Controls.Add(this.tbIznos1);
-            this.panel1.Controls.Add(this.cbVal2);
-            this.panel1.Controls.Add(this.cbVal1);
+            this.panel1.Controls.Add(this.btRegistracija);
+            this.panel1.Controls.Add(this.tbKonvert2);
+            this.panel1.Controls.Add(this.tbKonvert1);
+            this.panel1.Controls.Add(this.cmbVal2);
+            this.panel1.Controls.Add(this.cmbVal1);
             this.panel1.Location = new System.Drawing.Point(-1, -2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(890, 150);
+            this.panel1.Size = new System.Drawing.Size(890, 118);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // btKonverzija
+            // 
+            this.btKonverzija.Location = new System.Drawing.Point(615, 0);
+            this.btKonverzija.Name = "btKonverzija";
+            this.btKonverzija.Size = new System.Drawing.Size(51, 21);
+            this.btKonverzija.TabIndex = 5;
+            this.btKonverzija.Text = "=";
+            this.btKonverzija.UseVisualStyleBackColor = true;
+            this.btKonverzija.Click += new System.EventHandler(this.btKonverzija_Click);
+            // 
+            // btRegistracija
+            // 
+            this.btRegistracija.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btRegistracija.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
+            this.btRegistracija.Location = new System.Drawing.Point(791, 0);
+            this.btRegistracija.Name = "btRegistracija";
+            this.btRegistracija.Size = new System.Drawing.Size(99, 32);
+            this.btRegistracija.TabIndex = 4;
+            this.btRegistracija.Text = "Registracija";
+            this.btRegistracija.UseVisualStyleBackColor = true;
+            this.btRegistracija.Click += new System.EventHandler(this.btRegistracija_Click);
+            // 
+            // tbKonvert2
+            // 
+            this.tbKonvert2.Location = new System.Drawing.Point(663, 1);
+            this.tbKonvert2.Name = "tbKonvert2";
+            this.tbKonvert2.Size = new System.Drawing.Size(66, 20);
+            this.tbKonvert2.TabIndex = 3;
+            // 
+            // tbKonvert1
+            // 
+            this.tbKonvert1.Location = new System.Drawing.Point(562, 1);
+            this.tbKonvert1.Name = "tbKonvert1";
+            this.tbKonvert1.Size = new System.Drawing.Size(57, 20);
+            this.tbKonvert1.TabIndex = 2;
+            // 
+            // cmbVal2
+            // 
+            this.cmbVal2.FormattingEnabled = true;
+            this.cmbVal2.Items.AddRange(new object[] {
+            "EUR",
+            "RSD",
+            "USD",
+            "CHF",
+            "GBP"});
+            this.cmbVal2.Location = new System.Drawing.Point(726, 0);
+            this.cmbVal2.Name = "cmbVal2";
+            this.cmbVal2.Size = new System.Drawing.Size(68, 21);
+            this.cmbVal2.TabIndex = 1;
+            // 
+            // cmbVal1
+            // 
+            this.cmbVal1.FormattingEnabled = true;
+            this.cmbVal1.Items.AddRange(new object[] {
+            "RSD",
+            "EUR",
+            "USD",
+            "CHF",
+            "GBP"});
+            this.cmbVal1.Location = new System.Drawing.Point(496, 0);
+            this.cmbVal1.Name = "cmbVal1";
+            this.cmbVal1.Size = new System.Drawing.Size(69, 21);
+            this.cmbVal1.TabIndex = 0;
             // 
             // panel2
             // 
+            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
+            this.panel2.Controls.Add(this.btFilter);
             this.panel2.Controls.Add(this.groupBox2);
             this.panel2.Controls.Add(this.groupBox1);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(-1, 146);
+            this.panel2.Location = new System.Drawing.Point(-1, 115);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(202, 309);
+            this.panel2.Size = new System.Drawing.Size(206, 372);
             this.panel2.TabIndex = 1;
             // 
-            // panel3
+            // btFilter
             // 
-            this.panel3.Controls.Add(this.lbCena4);
-            this.panel3.Controls.Add(this.lbCena5);
-            this.panel3.Controls.Add(this.lbCena3);
-            this.panel3.Controls.Add(this.lbNaziv3);
-            this.panel3.Controls.Add(this.lbNaziv4);
-            this.panel3.Controls.Add(this.lbNaziv2);
-            this.panel3.Controls.Add(this.lbCena2);
-            this.panel3.Controls.Add(this.lbNaziv1);
-            this.panel3.Controls.Add(this.panel7);
-            this.panel3.Controls.Add(this.panel6);
-            this.panel3.Controls.Add(this.panel5);
-            this.panel3.Controls.Add(this.panel4);
-            this.panel3.Location = new System.Drawing.Point(202, 146);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(687, 309);
-            this.panel3.TabIndex = 2;
+            this.btFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.btFilter.Location = new System.Drawing.Point(40, 283);
+            this.btFilter.Name = "btFilter";
+            this.btFilter.Size = new System.Drawing.Size(100, 36);
+            this.btFilter.TabIndex = 3;
+            this.btFilter.Text = "Primeni filter";
+            this.btFilter.UseVisualStyleBackColor = true;
+            this.btFilter.Click += new System.EventHandler(this.btFilter_Click);
             // 
-            // label1
+            // groupBox2
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.label1.Location = new System.Drawing.Point(14, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Filteri:";
+            this.groupBox2.Controls.Add(this.rbBraon);
+            this.groupBox2.Controls.Add(this.rbBez);
+            this.groupBox2.Location = new System.Drawing.Point(14, 151);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(170, 112);
+            this.groupBox2.TabIndex = 2;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Prema boji";
+            // 
+            // rbBraon
+            // 
+            this.rbBraon.AutoSize = true;
+            this.rbBraon.Location = new System.Drawing.Point(4, 64);
+            this.rbBraon.Name = "rbBraon";
+            this.rbBraon.Size = new System.Drawing.Size(53, 17);
+            this.rbBraon.TabIndex = 3;
+            this.rbBraon.TabStop = true;
+            this.rbBraon.Text = "Braon";
+            this.rbBraon.UseVisualStyleBackColor = true;
+            // 
+            // rbBez
+            // 
+            this.rbBez.AutoSize = true;
+            this.rbBez.Location = new System.Drawing.Point(4, 28);
+            this.rbBez.Name = "rbBez";
+            this.rbBez.Size = new System.Drawing.Size(43, 17);
+            this.rbBez.TabIndex = 2;
+            this.rbBez.TabStop = true;
+            this.rbBez.Text = "Bež";
+            this.rbBez.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.rbFotelja);
+            this.groupBox1.Controls.Add(this.rbUgaona);
             this.groupBox1.Controls.Add(this.rbTrosed);
             this.groupBox1.Location = new System.Drawing.Point(14, 33);
             this.groupBox1.Name = "groupBox1";
@@ -129,16 +220,16 @@ namespace PresentationLayer
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Prema predmetu";
             // 
-            // groupBox2
+            // rbUgaona
             // 
-            this.groupBox2.Controls.Add(this.rbSiva);
-            this.groupBox2.Controls.Add(this.rbBela);
-            this.groupBox2.Location = new System.Drawing.Point(14, 164);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(170, 112);
-            this.groupBox2.TabIndex = 2;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Prema boji";
+            this.rbUgaona.AutoSize = true;
+            this.rbUgaona.Location = new System.Drawing.Point(6, 64);
+            this.rbUgaona.Name = "rbUgaona";
+            this.rbUgaona.Size = new System.Drawing.Size(107, 17);
+            this.rbUgaona.TabIndex = 1;
+            this.rbUgaona.TabStop = true;
+            this.rbUgaona.Text = "Ugaona garnitura";
+            this.rbUgaona.UseVisualStyleBackColor = true;
             // 
             // rbTrosed
             // 
@@ -151,231 +242,244 @@ namespace PresentationLayer
             this.rbTrosed.Text = "Trosed";
             this.rbTrosed.UseVisualStyleBackColor = true;
             // 
-            // rbFotelja
+            // label1
             // 
-            this.rbFotelja.AutoSize = true;
-            this.rbFotelja.Location = new System.Drawing.Point(6, 64);
-            this.rbFotelja.Name = "rbFotelja";
-            this.rbFotelja.Size = new System.Drawing.Size(56, 17);
-            this.rbFotelja.TabIndex = 1;
-            this.rbFotelja.TabStop = true;
-            this.rbFotelja.Text = "Fotelja";
-            this.rbFotelja.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.label1.Location = new System.Drawing.Point(14, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(56, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Filteri:";
             // 
-            // rbBela
+            // panel3
             // 
-            this.rbBela.AutoSize = true;
-            this.rbBela.Location = new System.Drawing.Point(4, 28);
-            this.rbBela.Name = "rbBela";
-            this.rbBela.Size = new System.Drawing.Size(46, 17);
-            this.rbBela.TabIndex = 2;
-            this.rbBela.TabStop = true;
-            this.rbBela.Text = "Bela";
-            this.rbBela.UseVisualStyleBackColor = true;
+            this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
+            this.panel3.Controls.Add(this.Detail4);
+            this.panel3.Controls.Add(this.Detail3);
+            this.panel3.Controls.Add(this.Detail2);
+            this.panel3.Controls.Add(this.Detail1);
+            this.panel3.Controls.Add(this.pictureBox4);
+            this.panel3.Controls.Add(this.pictureBox3);
+            this.panel3.Controls.Add(this.pictureBox2);
+            this.panel3.Controls.Add(this.pictureBox1);
+            this.panel3.Controls.Add(this.lbCena4);
+            this.panel3.Controls.Add(this.lbCena5);
+            this.panel3.Controls.Add(this.lbCena3);
+            this.panel3.Controls.Add(this.lbNaziv3);
+            this.panel3.Controls.Add(this.lbNaziv4);
+            this.panel3.Controls.Add(this.lbNaziv2);
+            this.panel3.Controls.Add(this.lbCena2);
+            this.panel3.Controls.Add(this.lbNaziv1);
+            this.panel3.Location = new System.Drawing.Point(202, 115);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(687, 372);
+            this.panel3.TabIndex = 2;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
-            // rbSiva
+            // Detail4
             // 
-            this.rbSiva.AutoSize = true;
-            this.rbSiva.Location = new System.Drawing.Point(4, 64);
-            this.rbSiva.Name = "rbSiva";
-            this.rbSiva.Size = new System.Drawing.Size(46, 17);
-            this.rbSiva.TabIndex = 3;
-            this.rbSiva.TabStop = true;
-            this.rbSiva.Text = "Siva";
-            this.rbSiva.UseVisualStyleBackColor = true;
+            this.Detail4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.Detail4.Location = new System.Drawing.Point(588, 298);
+            this.Detail4.Name = "Detail4";
+            this.Detail4.Size = new System.Drawing.Size(75, 23);
+            this.Detail4.TabIndex = 17;
+            this.Detail4.Text = "Detaljnije";
+            this.Detail4.UseVisualStyleBackColor = true;
+            this.Detail4.Click += new System.EventHandler(this.Detail4_Click);
             // 
-            // cbVal1
+            // Detail3
             // 
-            this.cbVal1.FormattingEnabled = true;
-            this.cbVal1.Items.AddRange(new object[] {
-            "RSD",
-            "EUR",
-            "USD",
-            "CHF",
-            "GBP"});
-            this.cbVal1.Location = new System.Drawing.Point(444, 2);
-            this.cbVal1.Name = "cbVal1";
-            this.cbVal1.Size = new System.Drawing.Size(78, 21);
-            this.cbVal1.TabIndex = 0;
+            this.Detail3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.Detail3.Location = new System.Drawing.Point(260, 298);
+            this.Detail3.Name = "Detail3";
+            this.Detail3.Size = new System.Drawing.Size(75, 23);
+            this.Detail3.TabIndex = 16;
+            this.Detail3.Text = "Detaljnije";
+            this.Detail3.UseVisualStyleBackColor = true;
+            this.Detail3.Click += new System.EventHandler(this.Detail3_Click);
             // 
-            // cbVal2
+            // Detail2
             // 
-            this.cbVal2.FormattingEnabled = true;
-            this.cbVal2.Items.AddRange(new object[] {
-            "EUR",
-            "RSD",
-            "USD",
-            "CHF",
-            "GBP"});
-            this.cbVal2.Location = new System.Drawing.Point(740, 2);
-            this.cbVal2.Name = "cbVal2";
-            this.cbVal2.Size = new System.Drawing.Size(78, 21);
-            this.cbVal2.TabIndex = 1;
+            this.Detail2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.Detail2.Location = new System.Drawing.Point(585, 144);
+            this.Detail2.Name = "Detail2";
+            this.Detail2.Size = new System.Drawing.Size(75, 23);
+            this.Detail2.TabIndex = 15;
+            this.Detail2.Text = "Detaljnije";
+            this.Detail2.UseVisualStyleBackColor = true;
+            this.Detail2.Click += new System.EventHandler(this.Detail2_Click);
             // 
-            // tbIznos1
+            // Detail1
             // 
-            this.tbIznos1.Location = new System.Drawing.Point(519, 3);
-            this.tbIznos1.Name = "tbIznos1";
-            this.tbIznos1.Size = new System.Drawing.Size(78, 20);
-            this.tbIznos1.TabIndex = 2;
+            this.Detail1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.Detail1.Location = new System.Drawing.Point(260, 146);
+            this.Detail1.Name = "Detail1";
+            this.Detail1.Size = new System.Drawing.Size(75, 23);
+            this.Detail1.TabIndex = 14;
+            this.Detail1.Text = "Detaljnije";
+            this.Detail1.UseVisualStyleBackColor = true;
+            this.Detail1.Click += new System.EventHandler(this.Detail1_Click);
             // 
-            // tbIznos2
+            // pictureBox4
             // 
-            this.tbIznos2.Location = new System.Drawing.Point(665, 3);
-            this.tbIznos2.Name = "tbIznos2";
-            this.tbIznos2.Size = new System.Drawing.Size(78, 20);
-            this.tbIznos2.TabIndex = 3;
+            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(368, 173);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(306, 122);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 13;
+            this.pictureBox4.TabStop = false;
             // 
-            // button1
+            // pictureBox3
             // 
-            this.button1.Location = new System.Drawing.Point(815, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Korpa";
-            this.button1.UseVisualStyleBackColor = true;
+            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(29, 173);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(306, 122);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 12;
+            this.pictureBox3.TabStop = false;
             // 
-            // btKonverzija
+            // pictureBox2
             // 
-            this.btKonverzija.Location = new System.Drawing.Point(594, 1);
-            this.btKonverzija.Name = "btKonverzija";
-            this.btKonverzija.Size = new System.Drawing.Size(75, 23);
-            this.btKonverzija.TabIndex = 5;
-            this.btKonverzija.Text = "=";
-            this.btKonverzija.UseVisualStyleBackColor = true;
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(368, 20);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(306, 122);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 11;
+            this.pictureBox2.TabStop = false;
             // 
-            // panel4
+            // pictureBox1
             // 
-            this.panel4.Controls.Add(this.lbCena1);
-            this.panel4.Location = new System.Drawing.Point(44, 9);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(275, 136);
-            this.panel4.TabIndex = 0;
-            // 
-            // panel5
-            // 
-            this.panel5.Location = new System.Drawing.Point(44, 161);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(275, 136);
-            this.panel5.TabIndex = 1;
-            // 
-            // panel6
-            // 
-            this.panel6.Location = new System.Drawing.Point(379, 9);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(275, 136);
-            this.panel6.TabIndex = 1;
-            // 
-            // panel7
-            // 
-            this.panel7.Location = new System.Drawing.Point(379, 161);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(275, 136);
-            this.panel7.TabIndex = 2;
-            // 
-            // lbCena1
-            // 
-            this.lbCena1.AutoSize = true;
-            this.lbCena1.Location = new System.Drawing.Point(149, 136);
-            this.lbCena1.Name = "lbCena1";
-            this.lbCena1.Size = new System.Drawing.Size(60, 13);
-            this.lbCena1.TabIndex = 0;
-            this.lbCena1.Text = "labelaCena";
-            // 
-            // lbNaziv1
-            // 
-            this.lbNaziv1.AutoSize = true;
-            this.lbNaziv1.Location = new System.Drawing.Point(85, 145);
-            this.lbNaziv1.Name = "lbNaziv1";
-            this.lbNaziv1.Size = new System.Drawing.Size(62, 13);
-            this.lbNaziv1.TabIndex = 1;
-            this.lbNaziv1.Text = "labelaNaziv";
-            // 
-            // lbCena2
-            // 
-            this.lbCena2.AutoSize = true;
-            this.lbCena2.Location = new System.Drawing.Point(212, 145);
-            this.lbCena2.Name = "lbCena2";
-            this.lbCena2.Size = new System.Drawing.Size(60, 13);
-            this.lbCena2.TabIndex = 3;
-            this.lbCena2.Text = "labelaCena";
-            // 
-            // lbNaziv2
-            // 
-            this.lbNaziv2.AutoSize = true;
-            this.lbNaziv2.Location = new System.Drawing.Point(85, 296);
-            this.lbNaziv2.Name = "lbNaziv2";
-            this.lbNaziv2.Size = new System.Drawing.Size(62, 13);
-            this.lbNaziv2.TabIndex = 4;
-            this.lbNaziv2.Text = "labelaNaziv";
-            // 
-            // lbNaziv4
-            // 
-            this.lbNaziv4.AutoSize = true;
-            this.lbNaziv4.Location = new System.Drawing.Point(437, 296);
-            this.lbNaziv4.Name = "lbNaziv4";
-            this.lbNaziv4.Size = new System.Drawing.Size(62, 13);
-            this.lbNaziv4.TabIndex = 5;
-            this.lbNaziv4.Text = "labelaNaziv";
-            // 
-            // lbNaziv3
-            // 
-            this.lbNaziv3.AutoSize = true;
-            this.lbNaziv3.Location = new System.Drawing.Point(437, 145);
-            this.lbNaziv3.Name = "lbNaziv3";
-            this.lbNaziv3.Size = new System.Drawing.Size(62, 13);
-            this.lbNaziv3.TabIndex = 6;
-            this.lbNaziv3.Text = "labelaNaziv";
-            // 
-            // lbCena3
-            // 
-            this.lbCena3.AutoSize = true;
-            this.lbCena3.Location = new System.Drawing.Point(555, 145);
-            this.lbCena3.Name = "lbCena3";
-            this.lbCena3.Size = new System.Drawing.Size(60, 13);
-            this.lbCena3.TabIndex = 7;
-            this.lbCena3.Text = "labelaCena";
-            // 
-            // lbCena5
-            // 
-            this.lbCena5.AutoSize = true;
-            this.lbCena5.Location = new System.Drawing.Point(555, 296);
-            this.lbCena5.Name = "lbCena5";
-            this.lbCena5.Size = new System.Drawing.Size(60, 13);
-            this.lbCena5.TabIndex = 8;
-            this.lbCena5.Text = "labelaCena";
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(29, 23);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(306, 122);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
             // 
             // lbCena4
             // 
             this.lbCena4.AutoSize = true;
-            this.lbCena4.Location = new System.Drawing.Point(212, 296);
+            this.lbCena4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbCena4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.lbCena4.Location = new System.Drawing.Point(169, 300);
             this.lbCena4.Name = "lbCena4";
-            this.lbCena4.Size = new System.Drawing.Size(60, 13);
+            this.lbCena4.Size = new System.Drawing.Size(87, 19);
             this.lbCena4.TabIndex = 9;
-            this.lbCena4.Text = "labelaCena";
+            this.lbCena4.Text = "68,000 RSD";
+            // 
+            // lbCena5
+            // 
+            this.lbCena5.AutoSize = true;
+            this.lbCena5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbCena5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.lbCena5.Location = new System.Drawing.Point(489, 300);
+            this.lbCena5.Name = "lbCena5";
+            this.lbCena5.Size = new System.Drawing.Size(87, 19);
+            this.lbCena5.TabIndex = 8;
+            this.lbCena5.Text = "60,000 RSD";
+            // 
+            // lbCena3
+            // 
+            this.lbCena3.AutoSize = true;
+            this.lbCena3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbCena3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.lbCena3.Location = new System.Drawing.Point(492, 146);
+            this.lbCena3.Name = "lbCena3";
+            this.lbCena3.Size = new System.Drawing.Size(87, 19);
+            this.lbCena3.TabIndex = 7;
+            this.lbCena3.Text = "42,000 RSD";
+            // 
+            // lbNaziv3
+            // 
+            this.lbNaziv3.AutoSize = true;
+            this.lbNaziv3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbNaziv3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.lbNaziv3.Location = new System.Drawing.Point(368, 146);
+            this.lbNaziv3.Name = "lbNaziv3";
+            this.lbNaziv3.Size = new System.Drawing.Size(102, 19);
+            this.lbNaziv3.TabIndex = 6;
+            this.lbNaziv3.Text = "JOLLY Trosed";
+            // 
+            // lbNaziv4
+            // 
+            this.lbNaziv4.AutoSize = true;
+            this.lbNaziv4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbNaziv4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.lbNaziv4.Location = new System.Drawing.Point(368, 300);
+            this.lbNaziv4.Name = "lbNaziv4";
+            this.lbNaziv4.Size = new System.Drawing.Size(115, 19);
+            this.lbNaziv4.TabIndex = 5;
+            this.lbNaziv4.Text = "ROMA Garnitura";
+            // 
+            // lbNaziv2
+            // 
+            this.lbNaziv2.AutoSize = true;
+            this.lbNaziv2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbNaziv2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.lbNaziv2.Location = new System.Drawing.Point(29, 300);
+            this.lbNaziv2.Name = "lbNaziv2";
+            this.lbNaziv2.Size = new System.Drawing.Size(134, 19);
+            this.lbNaziv2.TabIndex = 4;
+            this.lbNaziv2.Text = "ADRIANA Garnitura";
+            // 
+            // lbCena2
+            // 
+            this.lbCena2.AutoSize = true;
+            this.lbCena2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbCena2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.lbCena2.Location = new System.Drawing.Point(163, 148);
+            this.lbCena2.Name = "lbCena2";
+            this.lbCena2.Size = new System.Drawing.Size(87, 19);
+            this.lbCena2.TabIndex = 3;
+            this.lbCena2.Text = "47,000 RSD";
+            // 
+            // lbNaziv1
+            // 
+            this.lbNaziv1.AutoSize = true;
+            this.lbNaziv1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbNaziv1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.lbNaziv1.Location = new System.Drawing.Point(29, 148);
+            this.lbNaziv1.Name = "lbNaziv1";
+            this.lbNaziv1.Size = new System.Drawing.Size(128, 19);
+            this.lbNaziv1.TabIndex = 1;
+            this.lbNaziv1.Text = "BOLOGNA Trosed";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(888, 459);
+            this.ClientSize = new System.Drawing.Size(888, 487);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Salon namestaja";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -384,17 +488,17 @@ namespace PresentationLayer
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btKonverzija;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox tbIznos2;
-        private System.Windows.Forms.TextBox tbIznos1;
-        private System.Windows.Forms.ComboBox cbVal2;
-        private System.Windows.Forms.ComboBox cbVal1;
+        private System.Windows.Forms.Button btRegistracija;
+        private System.Windows.Forms.TextBox tbKonvert2;
+        private System.Windows.Forms.TextBox tbKonvert1;
+        private System.Windows.Forms.ComboBox cmbVal2;
+        private System.Windows.Forms.ComboBox cmbVal1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.RadioButton rbSiva;
-        private System.Windows.Forms.RadioButton rbBela;
+        private System.Windows.Forms.RadioButton rbBraon;
+        private System.Windows.Forms.RadioButton rbBez;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton rbFotelja;
+        private System.Windows.Forms.RadioButton rbUgaona;
         private System.Windows.Forms.RadioButton rbTrosed;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
@@ -406,11 +510,15 @@ namespace PresentationLayer
         private System.Windows.Forms.Label lbNaziv2;
         private System.Windows.Forms.Label lbCena2;
         private System.Windows.Forms.Label lbNaziv1;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label lbCena1;
+        private System.Windows.Forms.Button btFilter;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button Detail4;
+        private System.Windows.Forms.Button Detail3;
+        private System.Windows.Forms.Button Detail2;
+        private System.Windows.Forms.Button Detail1;
     }
 }
 
