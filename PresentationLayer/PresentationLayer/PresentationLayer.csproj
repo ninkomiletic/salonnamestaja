@@ -46,6 +46,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Racun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Racun.Designer.cs">
+      <DependentUpon>Racun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrosedBez.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrosedBez.Designer.cs">
+      <DependentUpon>TrosedBez.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UgaonaBez.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UgaonaBez.Designer.cs">
+      <DependentUpon>UgaonaBez.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UgaonaBraon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UgaonaBraon.Designer.cs">
+      <DependentUpon>UgaonaBraon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrosedBraon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrosedBraon.Designer.cs">
+      <DependentUpon>TrosedBraon.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +90,69 @@
     <Compile Include="Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ugaona1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ugaona1.Designer.cs">
+      <DependentUpon>Ugaona1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ugaona2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ugaona2.Designer.cs">
+      <DependentUpon>Ugaona2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ugaona3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ugaona3.Designer.cs">
+      <DependentUpon>Ugaona3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ugaona4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ugaona4.Designer.cs">
+      <DependentUpon>Ugaona4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trosed4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trosed4.Designer.cs">
+      <DependentUpon>Trosed4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trosed3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trosed3.Designer.cs">
+      <DependentUpon>Trosed3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trosed2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trosed2.Designer.cs">
+      <DependentUpon>Trosed2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trosed1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trosed1.Designer.cs">
+      <DependentUpon>Trosed1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Racun.resx">
+      <DependentUpon>Racun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrosedBez.resx">
+      <DependentUpon>TrosedBez.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UgaonaBez.resx">
+      <DependentUpon>UgaonaBez.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UgaonaBraon.resx">
+      <DependentUpon>UgaonaBraon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrosedBraon.resx">
+      <DependentUpon>TrosedBraon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -75,6 +168,30 @@
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Ugaona1.resx">
+      <DependentUpon>Ugaona1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ugaona2.resx">
+      <DependentUpon>Ugaona2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ugaona3.resx">
+      <DependentUpon>Ugaona3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ugaona4.resx">
+      <DependentUpon>Ugaona4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trosed4.resx">
+      <DependentUpon>Trosed4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trosed3.resx">
+      <DependentUpon>Trosed3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trosed2.resx">
+      <DependentUpon>Trosed2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trosed1.resx">
+      <DependentUpon>Trosed1.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -87,6 +204,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Images\t1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

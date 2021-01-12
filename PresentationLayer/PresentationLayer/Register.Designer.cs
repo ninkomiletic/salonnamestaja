@@ -29,6 +29,7 @@ namespace PresentationLayer
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Register));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -53,6 +54,7 @@ namespace PresentationLayer
             // 
             // panel1
             // 
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.Location = new System.Drawing.Point(-3, -1);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(504, 109);
@@ -61,10 +63,10 @@ namespace PresentationLayer
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(105, 111);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(266, 17);
+            this.label1.Size = new System.Drawing.Size(276, 18);
             this.label1.TabIndex = 1;
             this.label1.Text = "Popunite ova polja kako bi se registrovali";
             // 
@@ -74,7 +76,7 @@ namespace PresentationLayer
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label2.Location = new System.Drawing.Point(108, 128);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(258, 4);
+            this.label2.Size = new System.Drawing.Size(270, 4);
             this.label2.TabIndex = 2;
             // 
             // lbIme
@@ -101,7 +103,7 @@ namespace PresentationLayer
             // 
             this.lbAdresa.AutoSize = true;
             this.lbAdresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.lbAdresa.Location = new System.Drawing.Point(52, 236);
+            this.lbAdresa.Location = new System.Drawing.Point(54, 228);
             this.lbAdresa.Name = "lbAdresa";
             this.lbAdresa.Size = new System.Drawing.Size(62, 20);
             this.lbAdresa.TabIndex = 5;
@@ -111,7 +113,7 @@ namespace PresentationLayer
             // 
             this.lbMejl.AutoSize = true;
             this.lbMejl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.lbMejl.Location = new System.Drawing.Point(52, 265);
+            this.lbMejl.Location = new System.Drawing.Point(54, 254);
             this.lbMejl.Name = "lbMejl";
             this.lbMejl.Size = new System.Drawing.Size(57, 20);
             this.lbMejl.TabIndex = 6;
@@ -121,7 +123,7 @@ namespace PresentationLayer
             // 
             this.lbTelefon.AutoSize = true;
             this.lbTelefon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.lbTelefon.Location = new System.Drawing.Point(52, 294);
+            this.lbTelefon.Location = new System.Drawing.Point(54, 278);
             this.lbTelefon.Name = "lbTelefon";
             this.lbTelefon.Size = new System.Drawing.Size(64, 20);
             this.lbTelefon.TabIndex = 7;
@@ -131,7 +133,7 @@ namespace PresentationLayer
             // 
             this.lbMaticni.AutoSize = true;
             this.lbMaticni.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.lbMaticni.Location = new System.Drawing.Point(52, 206);
+            this.lbMaticni.Location = new System.Drawing.Point(52, 202);
             this.lbMaticni.Name = "lbMaticni";
             this.lbMaticni.Size = new System.Drawing.Size(57, 20);
             this.lbMaticni.TabIndex = 8;
@@ -168,42 +170,43 @@ namespace PresentationLayer
             // 
             // tbIme
             // 
-            this.tbIme.Location = new System.Drawing.Point(123, 148);
+            this.tbIme.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.tbIme.Location = new System.Drawing.Point(144, 150);
             this.tbIme.Name = "tbIme";
             this.tbIme.Size = new System.Drawing.Size(137, 20);
             this.tbIme.TabIndex = 12;
             // 
             // tbPrezime
             // 
-            this.tbPrezime.Location = new System.Drawing.Point(123, 179);
+            this.tbPrezime.Location = new System.Drawing.Point(144, 176);
             this.tbPrezime.Name = "tbPrezime";
             this.tbPrezime.Size = new System.Drawing.Size(137, 20);
             this.tbPrezime.TabIndex = 13;
             // 
             // tbMaticni
             // 
-            this.tbMaticni.Location = new System.Drawing.Point(123, 208);
+            this.tbMaticni.Location = new System.Drawing.Point(144, 202);
             this.tbMaticni.Name = "tbMaticni";
             this.tbMaticni.Size = new System.Drawing.Size(137, 20);
             this.tbMaticni.TabIndex = 14;
             // 
             // tbAdresa
             // 
-            this.tbAdresa.Location = new System.Drawing.Point(123, 234);
+            this.tbAdresa.Location = new System.Drawing.Point(144, 228);
             this.tbAdresa.Name = "tbAdresa";
             this.tbAdresa.Size = new System.Drawing.Size(137, 20);
             this.tbAdresa.TabIndex = 15;
             // 
             // tbMejl
             // 
-            this.tbMejl.Location = new System.Drawing.Point(123, 265);
+            this.tbMejl.Location = new System.Drawing.Point(144, 254);
             this.tbMejl.Name = "tbMejl";
             this.tbMejl.Size = new System.Drawing.Size(137, 20);
             this.tbMejl.TabIndex = 16;
             // 
             // tbTelefon
             // 
-            this.tbTelefon.Location = new System.Drawing.Point(123, 291);
+            this.tbTelefon.Location = new System.Drawing.Point(144, 280);
             this.tbTelefon.Name = "tbTelefon";
             this.tbTelefon.Size = new System.Drawing.Size(137, 20);
             this.tbTelefon.TabIndex = 17;
@@ -227,6 +230,7 @@ namespace PresentationLayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(500, 450);
             this.Controls.Add(this.tbSifra);
             this.Controls.Add(this.tbUser);
@@ -248,6 +252,7 @@ namespace PresentationLayer
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
             this.Name = "Register";
             this.Text = "Registracija";
             this.ResumeLayout(false);
