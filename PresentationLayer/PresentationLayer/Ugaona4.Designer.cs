@@ -1,7 +1,7 @@
 ﻿
 namespace PresentationLayer
 {
-    partial class Ugaona4
+    partial class Ugaona
     {
         /// <summary>
         /// Required designer variable.
@@ -29,16 +29,12 @@ namespace PresentationLayer
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ugaona4));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ugaona));
             this.pbTrosed1 = new System.Windows.Forms.PictureBox();
-            this.lbIme8 = new System.Windows.Forms.Label();
-            this.lbVelicina8 = new System.Windows.Forms.Label();
-            this.lbIznos8 = new System.Windows.Forms.Label();
-            this.lbStanje8 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.tbUsername8 = new System.Windows.Forms.TextBox();
-            this.tbSifra8 = new System.Windows.Forms.TextBox();
+            this.lbIme = new System.Windows.Forms.Label();
+            this.lbVelicina = new System.Windows.Forms.Label();
+            this.lbIznos = new System.Windows.Forms.Label();
+            this.lbStanje = new System.Windows.Forms.Label();
             this.btKupovina8 = new System.Windows.Forms.Button();
             this.btBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbTrosed1)).BeginInit();
@@ -55,76 +51,41 @@ namespace PresentationLayer
             this.pbTrosed1.TabIndex = 0;
             this.pbTrosed1.TabStop = false;
             // 
-            // lbIme8
+            // lbIme
             // 
-            this.lbIme8.AutoSize = true;
-            this.lbIme8.Location = new System.Drawing.Point(19, 42);
-            this.lbIme8.Name = "lbIme8";
-            this.lbIme8.Size = new System.Drawing.Size(87, 13);
-            this.lbIme8.TabIndex = 3;
-            this.lbIme8.Text = "GLAMUR Fotelja";
+            this.lbIme.AutoSize = true;
+            this.lbIme.Location = new System.Drawing.Point(19, 42);
+            this.lbIme.Name = "lbIme";
+            this.lbIme.Size = new System.Drawing.Size(87, 13);
+            this.lbIme.TabIndex = 3;
+            this.lbIme.Text = "GLAMUR Fotelja";
             // 
-            // lbVelicina8
+            // lbVelicina
             // 
-            this.lbVelicina8.AutoSize = true;
-            this.lbVelicina8.Location = new System.Drawing.Point(19, 78);
-            this.lbVelicina8.Name = "lbVelicina8";
-            this.lbVelicina8.Size = new System.Drawing.Size(65, 13);
-            this.lbVelicina8.TabIndex = 4;
-            this.lbVelicina8.Text = "97 x 95 x 77";
+            this.lbVelicina.AutoSize = true;
+            this.lbVelicina.Location = new System.Drawing.Point(19, 78);
+            this.lbVelicina.Name = "lbVelicina";
+            this.lbVelicina.Size = new System.Drawing.Size(65, 13);
+            this.lbVelicina.TabIndex = 4;
+            this.lbVelicina.Text = "97 x 95 x 77";
             // 
-            // lbIznos8
+            // lbIznos
             // 
-            this.lbIznos8.AutoSize = true;
-            this.lbIznos8.Location = new System.Drawing.Point(95, 322);
-            this.lbIznos8.Name = "lbIznos8";
-            this.lbIznos8.Size = new System.Drawing.Size(66, 13);
-            this.lbIznos8.TabIndex = 5;
-            this.lbIznos8.Text = "38,000 RSD";
+            this.lbIznos.AutoSize = true;
+            this.lbIznos.Location = new System.Drawing.Point(95, 322);
+            this.lbIznos.Name = "lbIznos";
+            this.lbIznos.Size = new System.Drawing.Size(66, 13);
+            this.lbIznos.TabIndex = 5;
+            this.lbIznos.Text = "38,000 RSD";
             // 
-            // lbStanje8
+            // lbStanje
             // 
-            this.lbStanje8.AutoSize = true;
-            this.lbStanje8.Location = new System.Drawing.Point(263, 322);
-            this.lbStanje8.Name = "lbStanje8";
-            this.lbStanje8.Size = new System.Drawing.Size(35, 13);
-            this.lbStanje8.TabIndex = 6;
-            this.lbStanje8.Text = "label1";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.label1.Location = new System.Drawing.Point(498, 38);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 24);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Username";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.label2.Location = new System.Drawing.Point(498, 78);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 24);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Sifra";
-            // 
-            // tbUsername8
-            // 
-            this.tbUsername8.Location = new System.Drawing.Point(601, 43);
-            this.tbUsername8.Name = "tbUsername8";
-            this.tbUsername8.Size = new System.Drawing.Size(165, 20);
-            this.tbUsername8.TabIndex = 9;
-            this.tbUsername8.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // tbSifra8
-            // 
-            this.tbSifra8.Location = new System.Drawing.Point(601, 83);
-            this.tbSifra8.Name = "tbSifra8";
-            this.tbSifra8.Size = new System.Drawing.Size(165, 20);
-            this.tbSifra8.TabIndex = 10;
+            this.lbStanje.AutoSize = true;
+            this.lbStanje.Location = new System.Drawing.Point(263, 322);
+            this.lbStanje.Name = "lbStanje";
+            this.lbStanje.Size = new System.Drawing.Size(35, 13);
+            this.lbStanje.TabIndex = 6;
+            this.lbStanje.Text = "label1";
             // 
             // btKupovina8
             // 
@@ -135,6 +96,7 @@ namespace PresentationLayer
             this.btKupovina8.TabIndex = 11;
             this.btKupovina8.Text = "Kupi proizvod";
             this.btKupovina8.UseVisualStyleBackColor = true;
+            this.btKupovina8.Click += new System.EventHandler(this.btKupovina8_Click);
             // 
             // btBack
             // 
@@ -146,7 +108,7 @@ namespace PresentationLayer
             this.btBack.UseVisualStyleBackColor = true;
             this.btBack.Click += new System.EventHandler(this.btBack_Click);
             // 
-            // Ugaona4
+            // Ugaona
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -154,18 +116,15 @@ namespace PresentationLayer
             this.ClientSize = new System.Drawing.Size(810, 355);
             this.Controls.Add(this.btBack);
             this.Controls.Add(this.btKupovina8);
-            this.Controls.Add(this.tbSifra8);
-            this.Controls.Add(this.tbUsername8);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.lbStanje8);
-            this.Controls.Add(this.lbIznos8);
-            this.Controls.Add(this.lbVelicina8);
-            this.Controls.Add(this.lbIme8);
+            this.Controls.Add(this.lbStanje);
+            this.Controls.Add(this.lbIznos);
+            this.Controls.Add(this.lbVelicina);
+            this.Controls.Add(this.lbIme);
             this.Controls.Add(this.pbTrosed1);
             this.MaximizeBox = false;
-            this.Name = "Ugaona4";
+            this.Name = "Ugaona";
             this.Text = "Trosed1";
+            this.Load += new System.EventHandler(this.Ugaona4_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbTrosed1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -175,14 +134,10 @@ namespace PresentationLayer
         #endregion
 
         private System.Windows.Forms.PictureBox pbTrosed1;
-        private System.Windows.Forms.Label lbIme8;
-        private System.Windows.Forms.Label lbVelicina8;
-        private System.Windows.Forms.Label lbIznos8;
-        private System.Windows.Forms.Label lbStanje8;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox tbUsername8;
-        private System.Windows.Forms.TextBox tbSifra8;
+        private System.Windows.Forms.Label lbIme;
+        private System.Windows.Forms.Label lbVelicina;
+        private System.Windows.Forms.Label lbIznos;
+        private System.Windows.Forms.Label lbStanje;
         private System.Windows.Forms.Button btKupovina8;
         private System.Windows.Forms.Button btBack;
     }

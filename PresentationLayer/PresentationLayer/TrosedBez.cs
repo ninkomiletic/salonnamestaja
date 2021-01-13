@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataAccessLayer.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,17 @@ namespace PresentationLayer
 {
     public partial class TrosedBez : Form
     {
+        Korisnik k = new Korisnik();
+
         public TrosedBez()
         {
             InitializeComponent();
+        }
+
+        public TrosedBez(Korisnik k)
+        {
+            InitializeComponent();
+            this.k = k;
         }
 
         private void btKonverzija_Click(object sender, EventArgs e)
@@ -217,14 +226,14 @@ namespace PresentationLayer
 
         private void Detail1_Click(object sender, EventArgs e)
         {
-            Trosed2 t2 = new Trosed2();
+            Trosed2 t2 = new Trosed2(k);
             t2.Show();
             this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Trosed3 t3 = new Trosed3();
+            Trosed3 t3 = new Trosed3(k);
             t3.Show();
             this.Hide();
         }
