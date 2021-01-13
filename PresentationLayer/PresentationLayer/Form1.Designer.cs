@@ -31,8 +31,8 @@ namespace PresentationLayer
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.btKonverzija = new System.Windows.Forms.Button();
-            this.btRegistracija = new System.Windows.Forms.Button();
             this.tbKonvert2 = new System.Windows.Forms.TextBox();
             this.tbKonvert1 = new System.Windows.Forms.TextBox();
             this.cmbVal2 = new System.Windows.Forms.ComboBox();
@@ -63,6 +63,10 @@ namespace PresentationLayer
             this.lbNaziv2 = new System.Windows.Forms.Label();
             this.lbCena2 = new System.Windows.Forms.Label();
             this.lbNaziv1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lbKorisnik = new System.Windows.Forms.Label();
+            this.lbRacun = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -77,8 +81,12 @@ namespace PresentationLayer
             // panel1
             // 
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.Controls.Add(this.lbRacun);
+            this.panel1.Controls.Add(this.lbKorisnik);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.btKonverzija);
-            this.panel1.Controls.Add(this.btRegistracija);
             this.panel1.Controls.Add(this.tbKonvert2);
             this.panel1.Controls.Add(this.tbKonvert1);
             this.panel1.Controls.Add(this.cmbVal2);
@@ -89,6 +97,16 @@ namespace PresentationLayer
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(13, 75);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(112, 36);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Dodaj novac";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // btKonverzija
             // 
             this.btKonverzija.Location = new System.Drawing.Point(615, 0);
@@ -98,18 +116,6 @@ namespace PresentationLayer
             this.btKonverzija.Text = "=";
             this.btKonverzija.UseVisualStyleBackColor = true;
             this.btKonverzija.Click += new System.EventHandler(this.btKonverzija_Click);
-            // 
-            // btRegistracija
-            // 
-            this.btRegistracija.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btRegistracija.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
-            this.btRegistracija.Location = new System.Drawing.Point(791, 0);
-            this.btRegistracija.Name = "btRegistracija";
-            this.btRegistracija.Size = new System.Drawing.Size(99, 32);
-            this.btRegistracija.TabIndex = 4;
-            this.btRegistracija.Text = "Registracija";
-            this.btRegistracija.UseVisualStyleBackColor = true;
-            this.btRegistracija.Click += new System.EventHandler(this.btRegistracija_Click);
             // 
             // tbKonvert2
             // 
@@ -453,6 +459,42 @@ namespace PresentationLayer
             this.lbNaziv1.TabIndex = 1;
             this.lbNaziv1.Text = "BOLOGNA Trosed";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(15, 11);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(58, 16);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Korisnik:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(23, 39);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(50, 16);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Račun:";
+            // 
+            // lbKorisnik
+            // 
+            this.lbKorisnik.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbKorisnik.Location = new System.Drawing.Point(82, 11);
+            this.lbKorisnik.Name = "lbKorisnik";
+            this.lbKorisnik.Size = new System.Drawing.Size(163, 16);
+            this.lbKorisnik.TabIndex = 9;
+            // 
+            // lbRacun
+            // 
+            this.lbRacun.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbRacun.Location = new System.Drawing.Point(82, 39);
+            this.lbRacun.Name = "lbRacun";
+            this.lbRacun.Size = new System.Drawing.Size(163, 16);
+            this.lbRacun.TabIndex = 10;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -488,7 +530,6 @@ namespace PresentationLayer
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btKonverzija;
-        private System.Windows.Forms.Button btRegistracija;
         private System.Windows.Forms.TextBox tbKonvert2;
         private System.Windows.Forms.TextBox tbKonvert1;
         private System.Windows.Forms.ComboBox cmbVal2;
@@ -519,6 +560,11 @@ namespace PresentationLayer
         private System.Windows.Forms.Button Detail3;
         private System.Windows.Forms.Button Detail2;
         private System.Windows.Forms.Button Detail1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label lbRacun;
+        private System.Windows.Forms.Label lbKorisnik;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
     }
 }
 
