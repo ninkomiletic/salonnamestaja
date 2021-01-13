@@ -216,13 +216,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj">
-      <Project>{B411DA14-8A9B-4BCD-BAD5-2959961278B4}</Project>
-      <Name>BusinessLayer</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">
-      <Project>{F58EB1CF-5608-4E1B-BF2C-C26F1D06FD1F}</Project>
-      <Name>DataAccessLayer</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\t1.jpg" />
