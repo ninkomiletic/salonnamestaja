@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Logovanje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logovanje.Designer.cs">
+      <DependentUpon>Logovanje.cs</DependentUpon>
+    </Compile>
     <Compile Include="Racun.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +144,9 @@
     <Compile Include="Trosed1.Designer.cs">
       <DependentUpon>Trosed1.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Logovanje.resx">
+      <DependentUpon>Logovanje.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Racun.resx">
       <DependentUpon>Racun.cs</DependentUpon>
     </EmbeddedResource>
@@ -207,9 +216,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj">
-      <Project>{b411da14-8a9b-4bcd-bad5-2959961278b4}</Project>
-      <Name>BusinessLayer</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\t1.jpg" />
