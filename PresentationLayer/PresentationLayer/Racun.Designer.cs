@@ -34,8 +34,8 @@ namespace PresentationLayer
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbUsername = new System.Windows.Forms.TextBox();
+            this.tbPassword = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.tbNovac = new System.Windows.Forms.TextBox();
             this.btDodaj = new System.Windows.Forms.Button();
@@ -81,20 +81,20 @@ namespace PresentationLayer
             this.label4.TabIndex = 3;
             this.label4.Text = "Sifra";
             // 
-            // textBox1
+            // tbUsername
             // 
-            this.textBox1.Location = new System.Drawing.Point(101, 72);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(137, 20);
-            this.textBox1.TabIndex = 4;
+            this.tbUsername.Location = new System.Drawing.Point(101, 72);
+            this.tbUsername.Name = "tbUsername";
+            this.tbUsername.Size = new System.Drawing.Size(137, 20);
+            this.tbUsername.TabIndex = 4;
             // 
-            // textBox2
+            // tbPassword
             // 
-            this.textBox2.Location = new System.Drawing.Point(101, 108);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(137, 20);
-            this.textBox2.TabIndex = 5;
+            this.tbPassword.Location = new System.Drawing.Point(101, 108);
+            this.tbPassword.Name = "tbPassword";
+            this.tbPassword.PasswordChar = '*';
+            this.tbPassword.Size = new System.Drawing.Size(137, 20);
+            this.tbPassword.TabIndex = 5;
             // 
             // label5
             // 
@@ -122,6 +122,7 @@ namespace PresentationLayer
             this.btDodaj.TabIndex = 8;
             this.btDodaj.Text = "Dodaj";
             this.btDodaj.UseVisualStyleBackColor = true;
+            this.btDodaj.Click += new System.EventHandler(this.btDodaj_Click);
             // 
             // btBack
             // 
@@ -143,8 +144,8 @@ namespace PresentationLayer
             this.Controls.Add(this.btDodaj);
             this.Controls.Add(this.tbNovac);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbPassword);
+            this.Controls.Add(this.tbUsername);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -162,8 +163,8 @@ namespace PresentationLayer
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbUsername;
+        private System.Windows.Forms.TextBox tbPassword;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox tbNovac;
         private System.Windows.Forms.Button btDodaj;

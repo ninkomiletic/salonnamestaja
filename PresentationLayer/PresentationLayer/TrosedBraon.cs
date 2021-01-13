@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataAccessLayer.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,17 @@ namespace PresentationLayer
 {
     public partial class TrosedBraon : Form
     {
+        public Korisnik k;
+
         public TrosedBraon()
         {
             InitializeComponent();
+        }
+
+        public TrosedBraon(Korisnik k)
+        {
+            InitializeComponent();
+            this.k = k;
         }
 
         private void btKonverzija_Click(object sender, EventArgs e)
@@ -181,7 +190,7 @@ namespace PresentationLayer
         {
             if (rbBez.Checked && rbTrosed.Checked)
             {
-                TrosedBez tbe = new TrosedBez();
+                TrosedBez tbe = new TrosedBez(k);
                 tbe.Show();
                 this.Hide();
             }
@@ -217,14 +226,14 @@ namespace PresentationLayer
 
         private void Detail1_Click(object sender, EventArgs e)
         {
-            Trosed1 t1 = new Trosed1();
+            Trosed1 t1 = new Trosed1(k);
             t1.Show();
             this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Trosed4 t4 = new Trosed4();
+            Trosed4 t4 = new Trosed4(k);
             t4.Show();
             this.Hide();
         }

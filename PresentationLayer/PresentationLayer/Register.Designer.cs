@@ -48,8 +48,8 @@ namespace PresentationLayer
             this.tbTelefon = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbUsername = new System.Windows.Forms.TextBox();
+            this.tbSifra = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.tbIznosNovac = new System.Windows.Forms.TextBox();
             this.btRegister = new System.Windows.Forms.Button();
@@ -214,20 +214,20 @@ namespace PresentationLayer
             this.label4.TabIndex = 11;
             this.label4.Text = "Sifra";
             // 
-            // textBox1
+            // tbUsername
             // 
-            this.textBox1.Location = new System.Drawing.Point(146, 406);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(116, 20);
-            this.textBox1.TabIndex = 18;
+            this.tbUsername.Location = new System.Drawing.Point(146, 406);
+            this.tbUsername.Name = "tbUsername";
+            this.tbUsername.Size = new System.Drawing.Size(116, 20);
+            this.tbUsername.TabIndex = 18;
             // 
-            // textBox2
+            // tbSifra
             // 
-            this.textBox2.Location = new System.Drawing.Point(146, 451);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(116, 20);
-            this.textBox2.TabIndex = 19;
+            this.tbSifra.Location = new System.Drawing.Point(146, 451);
+            this.tbSifra.Name = "tbSifra";
+            this.tbSifra.PasswordChar = '*';
+            this.tbSifra.Size = new System.Drawing.Size(116, 20);
+            this.tbSifra.TabIndex = 19;
             // 
             // label5
             // 
@@ -256,6 +256,7 @@ namespace PresentationLayer
             this.btRegister.TabIndex = 22;
             this.btRegister.Text = "Registracija";
             this.btRegister.UseVisualStyleBackColor = true;
+            this.btRegister.Click += new System.EventHandler(this.btRegister_Click);
             // 
             // Register
             // 
@@ -266,8 +267,8 @@ namespace PresentationLayer
             this.Controls.Add(this.btRegister);
             this.Controls.Add(this.tbIznosNovac);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbSifra);
+            this.Controls.Add(this.tbUsername);
             this.Controls.Add(this.tbTelefon);
             this.Controls.Add(this.tbMejl);
             this.Controls.Add(this.tbAdresa);
@@ -314,8 +315,8 @@ namespace PresentationLayer
         private System.Windows.Forms.TextBox tbTelefon;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbUsername;
+        private System.Windows.Forms.TextBox tbSifra;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox tbIznosNovac;
         private System.Windows.Forms.Button btRegister;

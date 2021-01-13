@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataAccessLayer.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,17 @@ namespace PresentationLayer
 {
     public partial class UgaonaBez : Form
     {
+        public Korisnik k;
+
         public UgaonaBez()
         {
             InitializeComponent();
+        }
+
+        public UgaonaBez(Korisnik k)
+        {
+            InitializeComponent();
+            this.k = k;
         }
 
         private void btKonverzija_Click(object sender, EventArgs e)
@@ -181,28 +190,28 @@ namespace PresentationLayer
         {
             if (rbBez.Checked && rbTrosed.Checked)
             {
-                TrosedBez tbe = new TrosedBez();
+                TrosedBez tbe = new TrosedBez(k);
                 tbe.Show();
                 this.Hide();
             }
 
             if (rbBraon.Checked && rbTrosed.Checked)
             {
-                TrosedBraon tbr = new TrosedBraon();
+                TrosedBraon tbr = new TrosedBraon(k);
                 tbr.Show();
                 this.Hide();
             }
 
             if (rbBez.Checked && rbUgaona.Checked)
             {
-                UgaonaBez ube = new UgaonaBez();
+                UgaonaBez ube = new UgaonaBez(k);
                 ube.Show();
                 this.Hide();
             }
 
             if (rbBraon.Checked && rbUgaona.Checked)
             {
-                UgaonaBraon ubr = new UgaonaBraon();
+                UgaonaBraon ubr = new UgaonaBraon(k);
                 ubr.Show();
                 this.Hide();
             }
@@ -217,14 +226,14 @@ namespace PresentationLayer
 
         private void Detail1_Click(object sender, EventArgs e)
         {
-            Ugaona1 u1 = new Ugaona1();
+            Ugaona1 u1 = new Ugaona1(k);
             u1.Show();
             this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Ugaona3 u3 = new Ugaona3();
+            Ugaona3 u3 = new Ugaona3(k);
             u3.Show();
             this.Hide();
         }
