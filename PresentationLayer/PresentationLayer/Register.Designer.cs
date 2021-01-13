@@ -40,16 +40,19 @@ namespace PresentationLayer
             this.lbTelefon = new System.Windows.Forms.Label();
             this.lbMaticni = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.lbUser = new System.Windows.Forms.Label();
-            this.lbSifra = new System.Windows.Forms.Label();
             this.tbIme = new System.Windows.Forms.TextBox();
             this.tbPrezime = new System.Windows.Forms.TextBox();
             this.tbMaticni = new System.Windows.Forms.TextBox();
             this.tbAdresa = new System.Windows.Forms.TextBox();
             this.tbMejl = new System.Windows.Forms.TextBox();
             this.tbTelefon = new System.Windows.Forms.TextBox();
-            this.tbUser = new System.Windows.Forms.TextBox();
-            this.tbSifra = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tbIznosNovac = new System.Windows.Forms.TextBox();
+            this.btRegister = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // panel1
@@ -143,30 +146,10 @@ namespace PresentationLayer
             // 
             this.label9.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label9.Location = new System.Drawing.Point(-3, 324);
+            this.label9.Location = new System.Drawing.Point(9, 368);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(504, 3);
             this.label9.TabIndex = 9;
-            // 
-            // lbUser
-            // 
-            this.lbUser.AutoSize = true;
-            this.lbUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.lbUser.Location = new System.Drawing.Point(52, 354);
-            this.lbUser.Name = "lbUser";
-            this.lbUser.Size = new System.Drawing.Size(86, 20);
-            this.lbUser.TabIndex = 10;
-            this.lbUser.Text = "Username";
-            // 
-            // lbSifra
-            // 
-            this.lbSifra.AutoSize = true;
-            this.lbSifra.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.lbSifra.Location = new System.Drawing.Point(52, 392);
-            this.lbSifra.Name = "lbSifra";
-            this.lbSifra.Size = new System.Drawing.Size(44, 20);
-            this.lbSifra.TabIndex = 11;
-            this.lbSifra.Text = "Sifra";
             // 
             // tbIme
             // 
@@ -211,37 +194,88 @@ namespace PresentationLayer
             this.tbTelefon.Size = new System.Drawing.Size(137, 20);
             this.tbTelefon.TabIndex = 17;
             // 
-            // tbUser
+            // label3
             // 
-            this.tbUser.Location = new System.Drawing.Point(144, 356);
-            this.tbUser.Name = "tbUser";
-            this.tbUser.Size = new System.Drawing.Size(116, 20);
-            this.tbUser.TabIndex = 18;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.label3.Location = new System.Drawing.Point(52, 404);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(86, 20);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Username";
             // 
-            // tbSifra
+            // label4
             // 
-            this.tbSifra.Location = new System.Drawing.Point(144, 394);
-            this.tbSifra.Name = "tbSifra";
-            this.tbSifra.PasswordChar = '*';
-            this.tbSifra.Size = new System.Drawing.Size(116, 20);
-            this.tbSifra.TabIndex = 19;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.label4.Location = new System.Drawing.Point(54, 451);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(44, 20);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "Sifra";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(146, 406);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(116, 20);
+            this.textBox1.TabIndex = 18;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(146, 451);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.PasswordChar = '*';
+            this.textBox2.Size = new System.Drawing.Size(116, 20);
+            this.textBox2.TabIndex = 19;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.label5.Location = new System.Drawing.Point(56, 321);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(185, 20);
+            this.label5.TabIndex = 20;
+            this.label5.Text = "Unesite novac na racun";
+            // 
+            // tbIznosNovac
+            // 
+            this.tbIznosNovac.Location = new System.Drawing.Point(247, 315);
+            this.tbIznosNovac.Multiline = true;
+            this.tbIznosNovac.Name = "tbIznosNovac";
+            this.tbIznosNovac.Size = new System.Drawing.Size(120, 26);
+            this.tbIznosNovac.TabIndex = 21;
+            // 
+            // btRegister
+            // 
+            this.btRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.btRegister.Location = new System.Drawing.Point(312, 422);
+            this.btRegister.Name = "btRegister";
+            this.btRegister.Size = new System.Drawing.Size(111, 38);
+            this.btRegister.TabIndex = 22;
+            this.btRegister.Text = "Registracija";
+            this.btRegister.UseVisualStyleBackColor = true;
             // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(500, 450);
-            this.Controls.Add(this.tbSifra);
-            this.Controls.Add(this.tbUser);
+            this.ClientSize = new System.Drawing.Size(500, 499);
+            this.Controls.Add(this.btRegister);
+            this.Controls.Add(this.tbIznosNovac);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.tbTelefon);
             this.Controls.Add(this.tbMejl);
             this.Controls.Add(this.tbAdresa);
             this.Controls.Add(this.tbMaticni);
             this.Controls.Add(this.tbPrezime);
             this.Controls.Add(this.tbIme);
-            this.Controls.Add(this.lbSifra);
-            this.Controls.Add(this.lbUser);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.lbMaticni);
             this.Controls.Add(this.lbTelefon);
@@ -272,15 +306,18 @@ namespace PresentationLayer
         private System.Windows.Forms.Label lbTelefon;
         private System.Windows.Forms.Label lbMaticni;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label lbUser;
-        private System.Windows.Forms.Label lbSifra;
         private System.Windows.Forms.TextBox tbIme;
         private System.Windows.Forms.TextBox tbPrezime;
         private System.Windows.Forms.TextBox tbMaticni;
         private System.Windows.Forms.TextBox tbAdresa;
         private System.Windows.Forms.TextBox tbMejl;
         private System.Windows.Forms.TextBox tbTelefon;
-        private System.Windows.Forms.TextBox tbUser;
-        private System.Windows.Forms.TextBox tbSifra;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox tbIznosNovac;
+        private System.Windows.Forms.Button btRegister;
     }
 }
