@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DBconnection.cs" />
+    <Compile Include="Konekcija.cs" />
     <Compile Include="KorisnikRepository.cs" />
     <Compile Include="Models\Korisnik.cs" />
     <Compile Include="Models\Namestaj.cs" />

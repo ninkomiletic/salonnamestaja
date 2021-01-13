@@ -10,10 +10,9 @@ namespace DataAccessLayer
 {
     public class KorisnikRepository
     {
-        public string konekcija = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=SalonNamestaja;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
         public int InsertKorisnik(Korisnik k)
         {
-            using (SqlConnection sqlCon = new SqlConnection(konekcija))
+            using (SqlConnection sqlCon = new SqlConnection(Konekcija.konekcija))
             {
 
                 String query = "INSERT INTO Korisnik (Ime, Prezime, JMBG, Adresa, Telefon, Racun, Username, Password, Email) VALUES ('"+ k.Ime + "', '" + k.Prezime + "', '" + k.JMBG + "', '" + k.Adresa + "', '" + k.Telefon + "', " + k.Racun + ", '" + k.Username + "', '" + k.Password + "', '" + k.Email + "')";
@@ -28,7 +27,7 @@ namespace DataAccessLayer
         public Korisnik CheckKorisnik(string username, string password)
         {
             Korisnik k = new Korisnik();
-            using (SqlConnection sqlCon = new SqlConnection(konekcija))
+            using (SqlConnection sqlCon = new SqlConnection(Konekcija.konekcija))
             {
 
                 String query = "SELECT * FROM Korisnik WHERE Username = '"+ username +"' AND Password = '"+ password +"'";
@@ -56,7 +55,7 @@ namespace DataAccessLayer
         }
         public void UpdateKorisnik(Korisnik k)
         {
-            using (SqlConnection sqlCon = new SqlConnection(konekcija))
+            using (SqlConnection sqlCon = new SqlConnection(Konekcija.konekcija))
             {
 
                 String query = "UPDATE Korisnik SET Racun = " + k.Racun + " WHERE Id = " + k.Id + "";

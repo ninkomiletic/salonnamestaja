@@ -10,12 +10,10 @@ namespace DataAccessLayer
 {
     public class NamestajRepository
     {
-        public string konekcija = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=SalonNamestaja;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
-
         public Namestaj GetNamestaj(int id)
         {
             Namestaj n = new Namestaj();
-            using (SqlConnection sqlCon = new SqlConnection(konekcija))
+            using (SqlConnection sqlCon = new SqlConnection(Konekcija.konekcija))
             {
 
                 String query = "SELECT * FROM Namestaj WHERE Id = "+ id +"";
