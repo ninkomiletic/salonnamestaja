@@ -10,7 +10,7 @@ namespace DataAccessLayer
 {
     public class NamestajRepository
     {
-        public string konekcija = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=master;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        public string konekcija = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=SalonNamestaja;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
         public Namestaj GetNamestaj(int id)
         {

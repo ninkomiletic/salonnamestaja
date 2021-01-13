@@ -10,13 +10,13 @@ namespace DataAccessLayer
 {
     public class KorisnikRepository
     {
-        public string konekcija = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=master;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        public string konekcija = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=SalonNamestaja;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
         public int InsertKorisnik(Korisnik k)
         {
             using (SqlConnection sqlCon = new SqlConnection(konekcija))
             {
 
-                String query = "INSERT INTO Korisnik (Ime, Prezime, JMBG, Adresa, Telefon, Racun, Username, Password, Email) VALUES ('"+ k.Ime + "', '" + k.Prezime + "', '" + k.JMBG + "', '" + k.Adresa + "', '" + k.Telefon + "', " + k.Racun + ", '" + k.Username + "', '" + k.Password + "', '" + k.Emai + "')";
+                String query = "INSERT INTO Korisnik (Ime, Prezime, JMBG, Adresa, Telefon, Racun, Username, Password, Email) VALUES ('"+ k.Ime + "', '" + k.Prezime + "', '" + k.JMBG + "', '" + k.Adresa + "', '" + k.Telefon + "', " + k.Racun + ", '" + k.Username + "', '" + k.Password + "', '" + k.Email + "')";
 
                 using (SqlCommand command = new SqlCommand(query, sqlCon))
                 {
@@ -51,6 +51,20 @@ namespace DataAccessLayer
                         k.Email = result.GetString(9);
                     }
                     return k;
+                }
+            }
+        }
+        public void UpdateKorisnik(Korisnik k)
+        {
+            using (SqlConnection sqlCon = new SqlConnection(konekcija))
+            {
+
+                String query = "UPDATE Korisnik SET Racun = " + k.Racun + " WHERE Id = " + k.Id + "";
+
+                using (SqlCommand command = new SqlCommand(query, sqlCon))
+                {
+                    sqlCon.Open();
+                    command.ExecuteNonQuery();
                 }
             }
         }

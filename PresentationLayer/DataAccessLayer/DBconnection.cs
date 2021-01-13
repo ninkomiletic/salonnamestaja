@@ -12,7 +12,8 @@ namespace DataAccessLayer
         private static SqlConnection sqlConnection = null;
         private static SqlCommand sqlCommand = null;
 
-        private static string connectionString = Constants.connectionString;
+        //private static string connectionString = Constants.connectionString;
+        public static string connectionString = "";
 
         private DBconnection()
         {
