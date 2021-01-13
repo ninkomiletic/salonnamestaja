@@ -31,14 +31,10 @@ namespace PresentationLayer
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ugaona1));
             this.pbTrosed1 = new System.Windows.Forms.PictureBox();
-            this.lbIme5 = new System.Windows.Forms.Label();
-            this.lbVelicina5 = new System.Windows.Forms.Label();
-            this.lbIznos5 = new System.Windows.Forms.Label();
-            this.lbStanje5 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.tbUsername5 = new System.Windows.Forms.TextBox();
-            this.tbSifra5 = new System.Windows.Forms.TextBox();
+            this.lbIme = new System.Windows.Forms.Label();
+            this.lbVelicina = new System.Windows.Forms.Label();
+            this.lbIznos = new System.Windows.Forms.Label();
+            this.lbStanje = new System.Windows.Forms.Label();
             this.btKupovina5 = new System.Windows.Forms.Button();
             this.btBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbTrosed1)).BeginInit();
@@ -55,76 +51,41 @@ namespace PresentationLayer
             this.pbTrosed1.TabIndex = 0;
             this.pbTrosed1.TabStop = false;
             // 
-            // lbIme5
+            // lbIme
             // 
-            this.lbIme5.AutoSize = true;
-            this.lbIme5.Location = new System.Drawing.Point(19, 42);
-            this.lbIme5.Name = "lbIme5";
-            this.lbIme5.Size = new System.Drawing.Size(93, 13);
-            this.lbIme5.TabIndex = 3;
-            this.lbIme5.Text = "BOLOGNA Fotelja";
+            this.lbIme.AutoSize = true;
+            this.lbIme.Location = new System.Drawing.Point(19, 42);
+            this.lbIme.Name = "lbIme";
+            this.lbIme.Size = new System.Drawing.Size(93, 13);
+            this.lbIme.TabIndex = 3;
+            this.lbIme.Text = "BOLOGNA Fotelja";
             // 
-            // lbVelicina5
+            // lbVelicina
             // 
-            this.lbVelicina5.AutoSize = true;
-            this.lbVelicina5.Location = new System.Drawing.Point(19, 78);
-            this.lbVelicina5.Name = "lbVelicina5";
-            this.lbVelicina5.Size = new System.Drawing.Size(65, 13);
-            this.lbVelicina5.TabIndex = 4;
-            this.lbVelicina5.Text = "95 x 95 x 95";
+            this.lbVelicina.AutoSize = true;
+            this.lbVelicina.Location = new System.Drawing.Point(19, 78);
+            this.lbVelicina.Name = "lbVelicina";
+            this.lbVelicina.Size = new System.Drawing.Size(65, 13);
+            this.lbVelicina.TabIndex = 4;
+            this.lbVelicina.Text = "95 x 95 x 95";
             // 
-            // lbIznos5
+            // lbIznos
             // 
-            this.lbIznos5.AutoSize = true;
-            this.lbIznos5.Location = new System.Drawing.Point(84, 322);
-            this.lbIznos5.Name = "lbIznos5";
-            this.lbIznos5.Size = new System.Drawing.Size(66, 13);
-            this.lbIznos5.TabIndex = 5;
-            this.lbIznos5.Text = "22,000 RSD";
+            this.lbIznos.AutoSize = true;
+            this.lbIznos.Location = new System.Drawing.Point(84, 322);
+            this.lbIznos.Name = "lbIznos";
+            this.lbIznos.Size = new System.Drawing.Size(66, 13);
+            this.lbIznos.TabIndex = 5;
+            this.lbIznos.Text = "22,000 RSD";
             // 
-            // lbStanje5
+            // lbStanje
             // 
-            this.lbStanje5.AutoSize = true;
-            this.lbStanje5.Location = new System.Drawing.Point(257, 322);
-            this.lbStanje5.Name = "lbStanje5";
-            this.lbStanje5.Size = new System.Drawing.Size(35, 13);
-            this.lbStanje5.TabIndex = 6;
-            this.lbStanje5.Text = "label1";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.label1.Location = new System.Drawing.Point(498, 38);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 24);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Username";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.label2.Location = new System.Drawing.Point(498, 78);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 24);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Sifra";
-            // 
-            // tbUsername5
-            // 
-            this.tbUsername5.Location = new System.Drawing.Point(601, 43);
-            this.tbUsername5.Name = "tbUsername5";
-            this.tbUsername5.Size = new System.Drawing.Size(165, 20);
-            this.tbUsername5.TabIndex = 9;
-            this.tbUsername5.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // tbSifra5
-            // 
-            this.tbSifra5.Location = new System.Drawing.Point(601, 83);
-            this.tbSifra5.Name = "tbSifra5";
-            this.tbSifra5.Size = new System.Drawing.Size(165, 20);
-            this.tbSifra5.TabIndex = 10;
+            this.lbStanje.AutoSize = true;
+            this.lbStanje.Location = new System.Drawing.Point(257, 322);
+            this.lbStanje.Name = "lbStanje";
+            this.lbStanje.Size = new System.Drawing.Size(35, 13);
+            this.lbStanje.TabIndex = 6;
+            this.lbStanje.Text = "label1";
             // 
             // btKupovina5
             // 
@@ -135,6 +96,7 @@ namespace PresentationLayer
             this.btKupovina5.TabIndex = 11;
             this.btKupovina5.Text = "Kupi proizvod";
             this.btKupovina5.UseVisualStyleBackColor = true;
+            this.btKupovina5.Click += new System.EventHandler(this.btKupovina5_Click);
             // 
             // btBack
             // 
@@ -154,14 +116,10 @@ namespace PresentationLayer
             this.ClientSize = new System.Drawing.Size(810, 355);
             this.Controls.Add(this.btBack);
             this.Controls.Add(this.btKupovina5);
-            this.Controls.Add(this.tbSifra5);
-            this.Controls.Add(this.tbUsername5);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.lbStanje5);
-            this.Controls.Add(this.lbIznos5);
-            this.Controls.Add(this.lbVelicina5);
-            this.Controls.Add(this.lbIme5);
+            this.Controls.Add(this.lbStanje);
+            this.Controls.Add(this.lbIznos);
+            this.Controls.Add(this.lbVelicina);
+            this.Controls.Add(this.lbIme);
             this.Controls.Add(this.pbTrosed1);
             this.MaximizeBox = false;
             this.Name = "Ugaona1";
@@ -176,14 +134,10 @@ namespace PresentationLayer
         #endregion
 
         private System.Windows.Forms.PictureBox pbTrosed1;
-        private System.Windows.Forms.Label lbIme5;
-        private System.Windows.Forms.Label lbVelicina5;
-        private System.Windows.Forms.Label lbIznos5;
-        private System.Windows.Forms.Label lbStanje5;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox tbUsername5;
-        private System.Windows.Forms.TextBox tbSifra5;
+        private System.Windows.Forms.Label lbIme;
+        private System.Windows.Forms.Label lbVelicina;
+        private System.Windows.Forms.Label lbIznos;
+        private System.Windows.Forms.Label lbStanje;
         private System.Windows.Forms.Button btKupovina5;
         private System.Windows.Forms.Button btBack;
     }
