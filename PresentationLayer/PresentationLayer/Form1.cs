@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataAccessLayer.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,16 @@ namespace PresentationLayer
 {
     public partial class Form1 : Form
     {
+        Korisnik k = new Korisnik();
         public Form1()
         {
             InitializeComponent();
+        }
+
+        public Form1(Korisnik k)
+        {
+            InitializeComponent();
+            this.k = k;
         }
 
         private void btKonverzija_Click(object sender, EventArgs e)
@@ -183,28 +191,28 @@ namespace PresentationLayer
         {
             if(rbBez.Checked && rbTrosed.Checked)
             {
-                TrosedBez tbe = new TrosedBez();
+                TrosedBez tbe = new TrosedBez(k);
                 tbe.Show();
                 this.Hide();
             }
 
             if (rbBraon.Checked && rbTrosed.Checked)
             {
-                TrosedBraon tbr = new TrosedBraon();
+                TrosedBraon tbr = new TrosedBraon(k);
                 tbr.Show();
                 this.Hide();
             }
 
             if (rbBez.Checked && rbUgaona.Checked)
             {
-                UgaonaBez ube = new UgaonaBez();
+                UgaonaBez ube = new UgaonaBez(k);
                 ube.Show();
                 this.Hide();
             }
 
             if (rbBraon.Checked && rbUgaona.Checked)
             {
-                UgaonaBraon ubr = new UgaonaBraon();
+                UgaonaBraon ubr = new UgaonaBraon(k);
                 ubr.Show();
                 this.Hide();
             }
@@ -212,7 +220,8 @@ namespace PresentationLayer
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            lbKorisnik.Text = k.Ime + " " + k.Prezime;
+            lbRacun.Text = Convert.ToString(k.Racun);
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -229,29 +238,36 @@ namespace PresentationLayer
 
         private void Detail1_Click(object sender, EventArgs e)
         {
-            Trosed1 t1 = new Trosed1();
+            Trosed1 t1 = new Trosed1(k);
             t1.Show();
             this.Hide();
         }
 
         private void Detail2_Click(object sender, EventArgs e)
         {
-            Trosed2 t2 = new Trosed2();
+            Trosed3 t2 = new Trosed3(k);
             t2.Show();
             this.Hide();
         }
 
         private void Detail3_Click(object sender, EventArgs e)
         {
-            Ugaona2 u2 = new Ugaona2();
+            Ugaona2 u2 = new Ugaona2(k);
             u2.Show();
             this.Hide();
         }
 
         private void Detail4_Click(object sender, EventArgs e)
         {
-            Ugaona4 u4 = new Ugaona4();
+            Ugaona u4 = new Ugaona(k);
             u4.Show();
+            this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Racun r = new Racun();
+            r.Show();
             this.Hide();
         }
     }
