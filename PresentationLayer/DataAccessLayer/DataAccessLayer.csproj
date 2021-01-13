@@ -44,9 +44,7 @@
     <Compile Include="DBconnection.cs" />
     <Compile Include="KorisnikRepository.cs" />
     <Compile Include="Models\Korisnik.cs" />
-    <Compile Include="Models\Korpa.cs" />
     <Compile Include="Models\Namestaj.cs" />
-    <Compile Include="Models\Stavke_korpe.cs" />
     <Compile Include="NamestajRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
