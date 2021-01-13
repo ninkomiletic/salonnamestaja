@@ -10,39 +10,49 @@ namespace DataAccessLayer
 {
     public class KorisnikRepository
     {
-        public object DBConnection { get; private set; }
-
-        public List<Korisnik> GetAllKorisnik()
-        {
-            List<Korisnik> results = new List<Korisnik>();
-
-             SqlDataReader sqlDataReader = DBconnection.GetData("SELECT * FROM Korisnik");
-
-            while (sqlDataReader.Read())
-            {
-                Korisnik k = new Korisnik();
-                k.Id = sqlDataReader.GetInt32(0);
-                k.Ime = sqlDataReader.GetString(1);
-                k.Prezime = sqlDataReader.GetString(2);
-                k.JMBG = sqlDataReader.GetString(3);
-                k.Adresa = sqlDataReader.GetString(4);
-                k.Telefon = sqlDataReader.GetString(5);
-                k.Username = sqlDataReader.GetString(6);
-                k.Password = sqlDataReader.GetString(7);
-
-                results.Add(k);
-            }
-
-            DBconnection.CloseConnection();
-
-            return results;
-        }
+        public string konekcija = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=master;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
         public int InsertKorisnik(Korisnik k)
         {
-            var result = DBconnection.EditData(string.Format("INSERT INTO Korinsik VALUES ('{0}', '{1}', {2}, '{3}', '{4}', {5}), '{6}')"));
-            DBconnection.CloseConnection();
+            using (SqlConnection sqlCon = new SqlConnection(konekcija))
+            {
 
-            return result;
+                String query = "INSERT INTO Korisnik (Ime, Prezime, JMBG, Adresa, Telefon, Racun, Username, Password, Email) VALUES ('"+ k.Ime + "', '" + k.Prezime + "', '" + k.JMBG + "', '" + k.Adresa + "', '" + k.Telefon + "', " + k.Racun + ", '" + k.Username + "', '" + k.Password + "', '" + k.Emai + "')";
+
+                using (SqlCommand command = new SqlCommand(query, sqlCon))
+                {
+                    sqlCon.Open();
+                    return command.ExecuteNonQuery();
+                }
+            }
+        }
+        public Korisnik CheckKorisnik(string username, string password)
+        {
+            Korisnik k = new Korisnik();
+            using (SqlConnection sqlCon = new SqlConnection(konekcija))
+            {
+
+                String query = "SELECT * FROM Korisnik WHERE Username = '"+ username +"' AND Password = '"+ password +"'";
+
+                using (SqlCommand command = new SqlCommand(query, sqlCon))
+                {
+                    sqlCon.Open();
+                    SqlDataReader result = command.ExecuteReader();
+                    while (result.Read())
+                    {
+                        k.Id = result.GetInt32(0);
+                        k.Ime = result.GetString(1);
+                        k.Prezime = result.GetString(2);
+                        k.JMBG = result.GetString(3);
+                        k.Adresa = result.GetString(4);
+                        k.Telefon = result.GetString(5);
+                        k.Racun = result.GetInt32(6);
+                        k.Username = result.GetString(7);
+                        k.Password = result.GetString(8);
+                        k.Email = result.GetString(9);
+                    }
+                    return k;
+                }
+            }
         }
     }
 }

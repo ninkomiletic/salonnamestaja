@@ -10,29 +10,31 @@ namespace DataAccessLayer
 {
     public class NamestajRepository
     {
-        public object DBConnection { get; private set; }
+        public string konekcija = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=master;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
-        public List<Namestaj> GetAllNamestaj()
+        public Namestaj GetNamestaj(int id)
         {
-            List<Namestaj> results = new List<Namestaj>();
-
-             SqlDataReader sqlDataReader = DBconnection.GetData("SELECT * FROM Korisnik");
-
-            while (sqlDataReader.Read())
+            Namestaj n = new Namestaj();
+            using (SqlConnection sqlCon = new SqlConnection(konekcija))
             {
-                Namestaj n = new Namestaj();
-                n.Id = sqlDataReader.GetInt32(0);
-                n.Naziv = sqlDataReader.GetString(1);
-                n.Velicina = sqlDataReader.GetDecimal(2);
-                n.Cena = sqlDataReader.GetDecimal(3);
-                n.Stanje = sqlDataReader.GetInt32(4);
-                
-                results.Add(n);
+
+                String query = "SELECT * FROM Namestaj WHERE Id = "+ id +"";
+
+                using (SqlCommand command = new SqlCommand(query, sqlCon))
+                {
+                    sqlCon.Open();
+                    SqlDataReader result = command.ExecuteReader();
+                    while (result.Read())
+                    {
+                        n.Id = result.GetInt32(0);
+                        n.Naziv = result.GetString(1);
+                        n.Velicina = result.GetDecimal(2);
+                        n.Cena = result.GetDecimal(3);
+                        n.Stanje = result.GetInt32(4);
+                    }
+                    return n;
+                }
             }
-
-            DBconnection.CloseConnection();
-
-            return results;
         }
 
     }

@@ -14,8 +14,10 @@ namespace DataAccessLayer.Models
         public string JMBG { get; set; }
         public string Adresa { get; set; }
         public string Telefon { get; set; }
+        public int Racun { get; set; }
         public string Username { get; set; }
         public string Password { get; set; }
+        public string Email { get; set; }
 
     }
 }

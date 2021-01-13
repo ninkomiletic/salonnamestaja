@@ -8,7 +8,6 @@ namespace DataAccessLayer.Models
 {
     public class Namestaj
     {
-        public int id { get; set; }
         public int Id { get; internal set; }
         public string Naziv { get; set; }
         public decimal Velicina { get; set; }
