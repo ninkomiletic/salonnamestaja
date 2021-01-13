@@ -16,7 +16,7 @@ namespace DataAccessLayer
         {
             List<Korisnik> results = new List<Korisnik>();
 
-            SqlDataReader sqlDataReader = DBconnection.GetData("SELECT * FROM Korisnik");
+             SqlDataReader sqlDataReader = DBconnection.GetData("SELECT * FROM Korisnik");
 
             while (sqlDataReader.Read())
             {
