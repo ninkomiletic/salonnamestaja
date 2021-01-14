@@ -1,0 +1,24 @@
+CREATE TABLE [dbo].[Korisnik] (
+    [Id]       INT           IDENTITY (1, 1) NOT NULL,
+    [Ime]      NVARCHAR (50) NOT NULL,
+    [Prezime]  NVARCHAR (50) NOT NULL,
+    [JMBG]     NVARCHAR (50) NOT NULL,
+    [Adresa]   NVARCHAR (50) NOT NULL,
+    [Telefon]  NVARCHAR (50) NOT NULL,
+    [Racun]    INT           NOT NULL,
+    [Username] NVARCHAR (50) NOT NULL,
+    [Password] NVARCHAR (50) NOT NULL,
+    [Email]    NVARCHAR (50) NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+**************************************************
+
+CREATE TABLE [dbo].[Namestaj] (
+    [Id]       INT             NOT NULL,
+    [Naziv]    NVARCHAR (50)   NOT NULL,
+    [Velicina] DECIMAL (18, 2) NOT NULL,
+    [Cena]     DECIMAL (18, 2) NOT NULL,
+    [Stanje]   INT             NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);

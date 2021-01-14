@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F22E55D4-AEB3-49F9-B826-B4D81DB605F8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PresentationLayer</RootNamespace>
+    <AssemblyName>PresentationLayer</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Logovanje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logovanje.Designer.cs">
+      <DependentUpon>Logovanje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Racun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Racun.Designer.cs">
+      <DependentUpon>Racun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrosedBez.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrosedBez.Designer.cs">
+      <DependentUpon>TrosedBez.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UgaonaBez.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UgaonaBez.Designer.cs">
+      <DependentUpon>UgaonaBez.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UgaonaBraon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UgaonaBraon.Designer.cs">
+      <DependentUpon>UgaonaBraon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrosedBraon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrosedBraon.Designer.cs">
+      <DependentUpon>TrosedBraon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ugaona1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ugaona1.Designer.cs">
+      <DependentUpon>Ugaona1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ugaona2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ugaona2.Designer.cs">
+      <DependentUpon>Ugaona2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ugaona3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ugaona3.Designer.cs">
+      <DependentUpon>Ugaona3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ugaona4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ugaona4.Designer.cs">
+      <DependentUpon>Ugaona4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trosed4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trosed4.Designer.cs">
+      <DependentUpon>Trosed4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trosed3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trosed3.Designer.cs">
+      <DependentUpon>Trosed3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trosed2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trosed2.Designer.cs">
+      <DependentUpon>Trosed2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trosed1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trosed1.Designer.cs">
+      <DependentUpon>Trosed1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Logovanje.resx">
+      <DependentUpon>Logovanje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Racun.resx">
+      <DependentUpon>Racun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrosedBez.resx">
+      <DependentUpon>TrosedBez.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UgaonaBez.resx">
+      <DependentUpon>UgaonaBez.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UgaonaBraon.resx">
+      <DependentUpon>UgaonaBraon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrosedBraon.resx">
+      <DependentUpon>TrosedBraon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ugaona1.resx">
+      <DependentUpon>Ugaona1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ugaona2.resx">
+      <DependentUpon>Ugaona2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ugaona3.resx">
+      <DependentUpon>Ugaona3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ugaona4.resx">
+      <DependentUpon>Ugaona4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trosed4.resx">
+      <DependentUpon>Trosed4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trosed3.resx">
+      <DependentUpon>Trosed3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trosed2.resx">
+      <DependentUpon>Trosed2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trosed1.resx">
+      <DependentUpon>Trosed1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj">
+      <Project>{B411DA14-8A9B-4BCD-BAD5-2959961278B4}</Project>
+      <Name>BusinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">
+      <Project>{F58EB1CF-5608-4E1B-BF2C-C26F1D06FD1F}</Project>
+      <Name>DataAccessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\t1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
